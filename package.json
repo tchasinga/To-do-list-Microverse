@@ -7,15 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack"
-  }
-  ,
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-
-  }
-  ,
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.8.1",
