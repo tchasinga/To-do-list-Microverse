@@ -15,17 +15,16 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
     document.querySelector('#title').value = '';
   }
 });
- 
+
 document.querySelector('.book-list').addEventListener('click', (e) => {
   if (e.target.classList.contains('delete')) {
     UI.deleteBook(e.target);
-    const isbn = e.target.parentElement.parentElement.dataset.isbn;
+    const { isbn } = e.target.parentElement.parentElement.dataset;
     Store.removeBook(isbn);
   } else if (e.target.classList.contains('mybox')) {
     const row = e.target.parentElement.parentElement;
     row.classList.toggle('completed');
-    const isbn = row.dataset.isbn;
+    const { isbn } = row.dataset;
     Store.toggleComplete(isbn);
   }
 });
-
