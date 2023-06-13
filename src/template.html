@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" defer src="index.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
     <title>To do List</title>
 </head>
 <body>
      <section class="mainSection">
          <h1>To-do List-manager</h1>
-         <form method="post">
+         <form method="post" id="book-form">
              <div class="firstInput">
-                 <input type="text" maxlength="600" required placeholder="Add your Information here">
+                 <input type="text" id="title" maxlength="600" required placeholder="Add your Information here">
+             </div>
+             <div class="book-list">
+                 
              </div>
              <p class="ClearAll">Delete All</p>
          </form>
