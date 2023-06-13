@@ -21,6 +21,18 @@ class UI {
   static deleteBook(el) {
     el.parentElement.parentElement.remove();
   }
+
+  static clearCompletedBooks() {
+    const completedBooks = document.querySelectorAll('.Edit.completed');
+    completedBooks.forEach((book) => {
+      book.parentElement.parentElement.remove();
+    });
+  }
+
+  static removeAllBooks() {
+    const list = document.querySelector('.book-list');
+    list.innerHTML = '';
+  }
 }
 
 export default UI;
