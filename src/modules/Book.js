@@ -1,6 +1,6 @@
-class Book{
-    constructor(title){
-        this.title = title;
-    }
+class Book {
+  constructor(title) {
+    this.title = title;
+  }
 }
 export default Book;
