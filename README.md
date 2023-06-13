@@ -49,7 +49,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->Click this Link to View [Live Versio]()
+>Click this Link to View [Live Versio](https://github.com/tchasinga/To-do-list-Microverse) coming soon
+but now you've only access to source code thankns you 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
