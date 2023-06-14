@@ -28,6 +28,7 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
     Store.toggleComplete(isbn);
   }
 });
+
 document.querySelector('.ClearAll').addEventListener('click', () => {
   UI.clearCompletedBooks();
 });

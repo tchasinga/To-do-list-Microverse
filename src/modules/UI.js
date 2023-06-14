@@ -3,6 +3,7 @@ import Store from './Store.js';
 class UI {
   static displayBooks() {
     const books = Store.getBooks();
+    UI.clearBookList(); // Clear the existing book list
     books.forEach((book) => UI.addBookToList(book));
   }
 
@@ -30,6 +31,11 @@ class UI {
   }
 
   static removeAllBooks() {
+    const list = document.querySelector('.book-list');
+    list.innerHTML = '';
+  }
+
+  static clearBookList() {
     const list = document.querySelector('.book-list');
     list.innerHTML = '';
   }
