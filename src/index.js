@@ -29,10 +29,21 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   }
 });
 
+document.querySelector('.book-list').addEventListener('input', (e) => {
+  if (e.target.classList.contains('Edit')) {
+    const { isbn } = e.target.parentElement.parentElement.dataset;
+    const newTitle = e.target.value;
+    UI.editBookTitle(isbn, newTitle);
+    Store.editBookTitle(isbn, newTitle);
+  }
+});
+
 document.querySelector('.ClearAll').addEventListener('click', () => {
   UI.clearCompletedBooks();
+  Store.clearCompletedBooks();
 });
 
 document.querySelector('.ClearAll').addEventListener('click', () => {
   UI.removeAllBooks();
+  Store.removeAllBooks();
 });

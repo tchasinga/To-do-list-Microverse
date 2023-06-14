@@ -30,6 +30,25 @@ class Store {
       localStorage.setItem('books', JSON.stringify(books));
     }
   }
+
+  static editBookTitle(isbn, newTitle) {
+    const books = Store.getBooks();
+    const book = books.find((book) => book.isbn === isbn);
+    if (book) {
+      book.title = newTitle;
+      localStorage.setItem('books', JSON.stringify(books));
+    }
+  }
+
+  static clearCompletedBooks() {
+    const books = Store.getBooks();
+    const updatedBooks = books.filter((book) => !book.completed);
+    localStorage.setItem('books', JSON.stringify(updatedBooks));
+  }
+
+  static removeAllBooks() {
+    localStorage.removeItem('books');
+  }
 }
 
 export default Store;
