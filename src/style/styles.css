@@ -107,3 +107,7 @@ tr {
   color: gray;
   font-style: italic;
 }
+
+.Edit {
+  border: none;
+}
