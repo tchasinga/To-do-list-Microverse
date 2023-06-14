@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 Book Library <a name="about-project"></a>
+# 📖 To-do List and task Manangement <a name="about-project"></a>
 
 **Book Library** is a simple web app that can be used to keep track of a list of books and their authors. It allows you to add or remove a book with ease.
 
@@ -32,18 +32,27 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>Builded by using those specific tech below</summary>
   <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a></li>
+     <li><a href="https://webpack.js.org/guides/getting-started/#basic-setup">Webpack</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **Easily add or remove a book**
-- **Added books are stored in the browser's Local Storage**
+> Here's the key Coming Features :
+
+- **To-do manangement task**
+- **Add Alarm to specifier to alert user to get back on his Task saved**
+
+````
+Using those specific features coming , life for UI will be really 
+Ease to manage, as the purpose of this To-do List is to help Users to manage  his all task of the day or coming day, Now I'm sure those 
+Coming features will helpful
+````
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
