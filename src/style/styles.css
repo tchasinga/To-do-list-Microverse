@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.mainSection {
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 300px;
+}
+
+#book-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  position: relative;
+  left: 10px;
+}
+
+.firstInput {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.myIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  position: relative;
+  right: 20px;
+}
+
+section p {
+  font-size: 15px;
+  color: rgb(10, 165, 255);
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  top: 49px;
+  align-items: center;
+  text-align: center;
+  background: #ccc;
+}
+
+section p:hover {
+  background: rgb(10, 165, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  scroll-behavior: smooth;
+}
+
+.mainSection h1 {
+  position: relative;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.mybox {
+  font-size: 15px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+}
+
+tr {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NameSide {
+  color: rgb(20, 18, 18);
+  justify-content: flex-start;
+  margin-right: 900px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  font-style: italic;
+}
