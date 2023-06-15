@@ -15,29 +15,28 @@ class Store {
 
   static removeBook(isbn) {
     const books = Store.getBooks();
-    const index = books.findIndex((book) => book.isbn === isbn);
-    if (index !== -1) {
-      books.splice(index, 1);
-      localStorage.setItem('books', JSON.stringify(books));
-    }
+    const updatedBooks = books.filter((book) => book.isbn !== isbn);
+    localStorage.setItem('books', JSON.stringify(updatedBooks));
   }
 
   static toggleComplete(isbn) {
     const books = Store.getBooks();
-    const book = books.find((book) => book.isbn === isbn);
-    if (book) {
-      book.completed = !book.completed;
-      localStorage.setItem('books', JSON.stringify(books));
-    }
+    books.forEach((book) => {
+      if (book.isbn === isbn) {
+        book.completed = !book.completed;
+      }
+    });
+    localStorage.setItem('books', JSON.stringify(books));
   }
 
   static editBookTitle(isbn, newTitle) {
     const books = Store.getBooks();
-    const book = books.find((book) => book.isbn === isbn);
-    if (book) {
-      book.title = newTitle;
-      localStorage.setItem('books', JSON.stringify(books));
-    }
+    books.forEach((book) => {
+      if (book.isbn === isbn) {
+        book.title = newTitle;
+      }
+    });
+    localStorage.setItem('books', JSON.stringify(books));
   }
 
   static clearCompletedBooks() {

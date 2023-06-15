@@ -1,8 +1,8 @@
 class Book {
   constructor(title) {
     this.title = title;
-    this.isbn = Date.now().toString();
     this.completed = false;
+    this.isbn = Date.now().toString();
   }
 }
 

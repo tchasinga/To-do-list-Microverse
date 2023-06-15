@@ -12,10 +12,10 @@ class UI {
     const row = document.createElement('tr');
     row.dataset.isbn = book.isbn;
     row.innerHTML = `
-        <td><input type="checkbox" class="mybox" ${book.completed ? 'checked' : ''}></td>
-        <td class="NameSide"><input type="text" class="Edit" value="${book.title}"></td>
-        <td><button class="material-icons delete">delete</button></td>
-      `;
+      <td><input type="checkbox" class="mybox" ${book.completed ? 'checked' : ''}></td>
+      <td class="NameSide"><input type="text" class="Edit" value="${book.title}"></td>
+      <td><button class="material-icons delete">delete</button></td>
+    `;
     list.appendChild(row);
   }
 
