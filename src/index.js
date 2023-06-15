@@ -39,11 +39,6 @@ document.querySelector('.book-list').addEventListener('input', (e) => {
 });
 
 document.querySelector('.ClearAll').addEventListener('click', () => {
-  UI.clearCompletedBooks();
   Store.clearCompletedBooks();
-});
-
-document.querySelector('.ClearAll').addEventListener('click', () => {
-  UI.removeAllBooks();
-  Store.removeAllBooks();
+  UI.displayBooks();
 });
