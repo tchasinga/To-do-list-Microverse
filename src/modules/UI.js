@@ -6,7 +6,6 @@ class UI {
     UI.clearBookList();
     books.forEach((book) => UI.addBookToList(book));
   }
-
   static addBookToList(book) {
     const list = document.querySelector('.book-list');
     const row = document.createElement('tr');

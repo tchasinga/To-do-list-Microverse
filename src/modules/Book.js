@@ -5,5 +5,4 @@ class Book {
     this.isbn = Date.now().toString();
   }
 }
-
 export default Book;
