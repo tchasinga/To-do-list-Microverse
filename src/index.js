@@ -37,7 +37,7 @@ document.querySelector('.book-list').addEventListener('input', (e) => {
     Store.editBookTitle(isbn, newTitle);
   }
 });
-
+  // new Updating 
 document.querySelector('.ClearAll').addEventListener('click', () => {
   Store.clearCompletedBooks();
   UI.displayBooks();
