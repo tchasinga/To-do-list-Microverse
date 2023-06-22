@@ -58,8 +58,7 @@ Coming features will helpful
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->Click this Link to View [Live Versio](https://github.com/tchasinga/To-do-list-Microverse) coming soon
-but now you've only access to source code thankns you 
+> Coming soon , We'll be ovejoyed to see you back , thanks for your understanding ., 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
