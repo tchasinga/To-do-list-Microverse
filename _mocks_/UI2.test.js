@@ -40,3 +40,30 @@ describe('UI', () => {
       expect(list.innerHTML.replace(/\s/g, '')).toEqual(expectedRow.replace(/\s/g, ''));
     });
   });
+
+  describe('deleteBook', () => {
+    test('should remove the book from the list', () => {
+      // Prepare
+      document.body.innerHTML = `
+        <table>
+          <tbody class="book-list">
+            <tr data-isbn="123">
+              <td><input type="checkbox" class="mybox"></td>
+              <td class="NameSide"><input type="text" class="Edit" value="Title"></td>
+              <td><button class="material-icons delete">delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      `;
+
+      const deleteButton = document.querySelector('.delete');
+
+      // Execute
+      UI.deleteBook(deleteButton);
+
+      // Verify
+      const list = document.querySelector('.book-list');
+      expect(list.innerHTML.trim()).toBe('');
+    });
+  });
+});
