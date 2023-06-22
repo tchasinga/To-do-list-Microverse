@@ -87,6 +87,49 @@ Clone this repository to your desired folder:
 
 https://github.com/tchasinga/To-do-list-Microverse.git
 
+
+### 👌 ABOUT TESTTING CODE 
+Testing your application's logic with test suites has always been an important part of software development;
+> a framework like Mocha or Jasmine, or spinning up DOM-dependent tests in a headless browser like PhantomJS, our options for unit testing JavaScript are better now than ever. However, this doesn’t mean the code we’re testing is as easy
+
+### procees of testing code 
+
+```
+Go to Code Editor and run this npm command : 
+npm install --save-dev @babel/plugin-transform-modules-commonjs
+
+```
+And after that creat the file named : .babelrc and inside the file 
+you can paste this code code below : 
+
+```
+
+{
+  "env": {
+    "test": {
+      "plugins": ["@babel/plugin-transform-modules-commonjs"]
+    }
+  }
+}
+
+```
+>IMPORTANT PART IS TO CREATE **JEST.CONFIG.JS** and paste the file those following code 
+
+```
+module.exports = {
+  testEnvironment: 'jest-environment-jsdom',
+};
+
+
+```
+
+
+After you have done with all of these steps, go back into your terminal or cmd prompt window and run this command
+
+```
+npm run test 
+```
+
 ### Install
 
 This project doesn't need to be installed.
