@@ -58,10 +58,7 @@ Coming features will helpful
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming soon , we'll be ovejoyed to see you back , thanks for your understanding
-```
- but now the access is N/A
-``` 
+> N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
